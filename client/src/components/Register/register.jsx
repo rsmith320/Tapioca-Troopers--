@@ -27,7 +27,7 @@ export default function Register() {
         setButtonText("Registering...");
 
         try {
-            const resp = userRegister(formData);
+            const resp = await userRegister(formData);
 
             if (resp.ok) {
                 const data = await resp.json();

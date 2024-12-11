@@ -26,7 +26,7 @@ export default function Login({ authToken, AuthUser }) {
         setButtonText("Submitting..");
 
         try {
-            const resp = userLogin(formData);
+            const resp = await userLogin(formData);
 
             if (resp.ok) {
                 const data = await resp.json();
