@@ -21,7 +21,7 @@ const userLogin = async (formData) => {
 
 
 const userRegister = async (formData) => {
-  const resp = await fetch("http://localhost:3060/api/register", {
+  const resp = await fetch(`${serverUrl}/api/register`, {
     method: 'POST',
     headers: {
       "Content-Type": "application/json",
